@@ -11,7 +11,7 @@ with open('BD_Planets.json') as f:
 def homepage():
     # Apresenta os dados do JSON na rota raiz da API
     json_data = json.dumps(data, indent=4)
-    return Response(json_data, mimetype='application/json')
+    return  f'<pre>{json_data}</pre>'
 
 if __name__ == "__main__":
     app.run(debug=True)
