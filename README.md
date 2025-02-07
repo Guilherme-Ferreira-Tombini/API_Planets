@@ -24,13 +24,13 @@ Este projeto é uma aplicação API basica feita na linguagem python que além d
 #### Retorna um item
 
 ```http
-  GET /${id}
+  GET /:id
 ```
 
 #### Retorna a imagem de um item
 
 ```http
-  GET /${id}/link
+  GET /:id/link
 ```
 
 **Obrigatório**. O ID do item é importante para realizar as consultas GET de cada planeta e das imagens
