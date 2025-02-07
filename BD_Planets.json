@@ -33,7 +33,7 @@
         "Id":6,
         "Name":"Saturn",
         "Description":"Famoso por seus aneis visiveis, compostos de particulas de gelo e rocha. Saturno e outro gigante gasoso com uma impressionante quantidade de luas, incluindo Tita, que possui uma atmosfera densa.",
-        "Link": ".jpg"
+        "Link": "saturno.jpg"
     },
     {
         "Id":7,
@@ -46,5 +46,18 @@
         "Name":"Venus",
         "Description":"Similar em tamanho a Terra, mas com uma atmosfera espessa de dioxido de carbono que causa um efeito estufa extremo, tornando-o o planeta mais quente do sistema solar. Sua superficie e cheia de vulcoes e terrenos montanhosos.",
         "Link": "venus.jpg"
+    },
+    {
+        "Id":9,
+        "Name":"Sol",
+        "Description":"O Sol é uma estrela do tipo anã amarela, localizada no centro do Sistema Solar, essencial para a vida na Terra. Composto principalmente por hidrogênio e hélio, sua fusão nuclear gera luz e calor. Sua energia influencia o clima, as marés e os ciclos biológicos do planeta.",
+        "Link": "sol.jpg"
+    },
+    {
+        "Id":10,
+        "Name":"Moon",
+        "Description":"A Lua é o único satélite natural da Terra, influenciando as marés e os ciclos biológicos. Sua superfície é coberta por crateras, montanhas e mares de basalto formados por impactos e atividade vulcânica antiga. Reflete a luz do Sol e passa por fases devido à sua posição em relação à Terra e ao Sol.",
+        "Link": "lua.jpg"
     }
+
 ]
