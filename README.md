@@ -9,7 +9,7 @@ Este projeto é uma aplicação API basica feita na linguagem python que além d
 ## Funcionalidades
 
 - Carregamento de dados e descricao de cada planeta
-- Carregamento das texturas
+- Carregamento das imagens de texturas
 
 
 
