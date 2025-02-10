@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, send_from_directory, abort
+from flask_cors import CORS
 import os
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 IMAGE_FOLDER = os.path.join(os.getcwd(), 'planets')
 
