@@ -18,9 +18,7 @@ def load_json():
 @app.route('/', methods=['GET'])
 def homepage():
     data = load_json() 
-    json_data = json.dumps(data, indent=4, ensure_ascii=False)
-    return f'<pre>{json_data}</pre>'
-
+    return jsonify(data)  # Retorna JSON diretamente
 
 # Carregamento dos planetas pelo ID
 @app.route('/<int:planet_id>')
@@ -30,7 +28,6 @@ def get_planet(planet_id):
     if planet:
         return jsonify(planet)
     return jsonify({"error": "Planeta não encontrado"}), 404
-
 
 # Carregamento das imagens pelo ID de cada planeta
 @app.route('/<int:planet_id>/link')
