@@ -44,5 +44,28 @@ def get_image(planet_id):
     
     return abort(404, "Imagem não encontrada")
 
+# Carregamento das imagens pelo ID de cada planeta
+@app.route('/<int:planet_id>/name')
+def get_name(planet_id):
+    data = load_json()
+    planet = next((p for p in data if p["Id"] == planet_id), None)
+
+    if planet:
+        planet_name = planet["Name"]  
+        return jsonify(planet_name)
+    
+    return abort(404, "Nome nao encontrado")
+
+@app.route('/<int:planet_id>/description')
+def get_description(planet_id):
+    data = load_json()
+    planet = next((p for p in data if p["Id"] == planet_id), None)
+
+    if planet:
+        planet_description = planet["Description"]  
+        return jsonify(planet_description)
+    
+    return abort(404, "Descrição nao encontrado")
+
 if __name__ == '__main__':
     app.run(debug=True)
